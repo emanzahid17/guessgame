@@ -21,6 +21,8 @@ if st.button("Submit Guess"):
         st.success("Congratulations! You guessed the correct number.")
         # Optionally, reset the game
         if st.button("Play Again"):
-            # Generate a new random number and reset input
+            # Generate a new random number
             st.session_state.guess_num = random.randint(1, 100)
+            # Clear the input
             st.experimental_rerun()
+
