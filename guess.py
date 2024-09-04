@@ -1,7 +1,7 @@
 import streamlit
 import random
 from random import randint
-
+streamlit.title ("User Guessing Game")
 guess_num = random.randint(1,100)
 while True:
     entered_num = int(input('enter number: '))
