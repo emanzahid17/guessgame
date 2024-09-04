@@ -21,7 +21,7 @@ if st.button("Submit Guess"):
     elif entered_num < guess_num:
         st.write("Too low! Try again.")
     else:
-        st.success("Congratulations! You guessed the correct number.")
+        st.write("Congratulations! You guessed the correct number.")
         # Optionally, reset the game
         if st.button("Play Again"):
             st.experimental_rerun()
