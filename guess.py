@@ -30,5 +30,5 @@ if st.session_state.success:
             st.session_state.guess_num = random.randint(1, 100)
             st.session_state.success = False
             # Clear the input
-            st.experimental_rerun()
+            st.rerun()
 
